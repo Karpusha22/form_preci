@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html lang="ua">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Commissioner:wght@300;400&family=Jost:wght@100;300;400&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/main.min.css" />
+
+    <title>Форма</title>
+</head>
+<body>
+<!-- Шапка сайта -->
+<header>
+<div class="header__container">
+    <nav class="header__menu">
+        <a class="logo" href="./index.html">
+            <svg width="60px" height="60px">
+                <use class="icon" href="./images/icons.svg#icon-Preci-logo"></use>
+            </svg>
+            
+        <ul class="nav">
+            <li class="nav__item"><a class="nav__link" href="./home.html">Головна</a></li>
+            <li class="nav__item"><a class="nav__link" href="./index.html">Ввести данні паціента</a></li>
+            <li class="nav__item"><a class="nav__link" href="./about.html">Про Нас</a></li>
+        </ul>
+    </nav>
+</div>
+</header>
+<main class="body__container">
+    <section class="section-one">
+        <h1 class="heading">Форма призначена для заповнення лікарем</h1>
+        <p class="section-one__text">Ця форма сканується автоматично.</p>
+    </section>
+
+    <section class="section-two">
+        <form class="intake-form">
+        <h2 class="sub-heading">1 Загальна Інформація</h2>
+<div class="section-two__wrap">
+            <div class="form-field1">
+                <label for="patient_code">1.1 Код пацієнта</label>
+                <input type="text" name="patient_code" id="patient_code" placeholder=""/>
+            </div>
+
+            <div class="form-field2">
+                <label for="patient_age">1.2 Вік (у роках, цифрами)</label>
+                <input type="number" name="patient_age" id="patient_age" placeholder="" />
+            </div>
+
+            <div class="form-checkbox__gender">
+                <h3 class="group-heading">1.3 Біологічна стать</h3>
+                <div class="form-checkbox__gender1">
+                <input type="checkbox" name="sex" value="male" id="male" />
+                <label for="male">Чоловіча</label>
+                
+                <input type="checkbox" name="sex" value="female" id="female" />
+                <label for="female">Жіноча</label>
+            </div>
+            </div>
+</div>
+       
+            <div class="patient-race">
+                <h3 class="group-heading">1.4 Раса</h3>
+                <input type="checkbox" name="race" value="caucasian" id="caucasian" />
+                <label for="caucasian">Європеїдна</label>
+            
+                <input type="checkbox" name="race" value="mongoloid" id="mongoloid" />
+                <label for="mongoloid">Монголоїдна</label>
+
+                <input type="checkbox" name="race" value="african" id="african" />
+                <label for="african">Африканська</label>
+            
+                <input type="checkbox" name="race " value="australoid" id="australoid" />
+                <label for="australoid">Австралоїдна</label>
+
+                <input type="checkbox" name="race" value="unknown" id="unknown" />
+                <label for="unknown">Невідомо</label>
+            </div>
+    </section>
+    <section class="section-three">
+            <h2 class="sub-heading">2 Інформація про забір біопсії/ пост-операційний матеріал</h2>
+            
+            <h3 class="group-heading">2.1 Локалізація пухлини</h3>
+            
+            <div class="form-checkbox__tumor"></div>
+            <input type="checkbox" name="tumor_localisation" value="breasts" id="breasts" />
+            <label for="breasts">Груди</label>
+            
+            <input type="checkbox" name="tumor_localisation" value="intestine" id="intestine" />
+            <label for="intestine">Кишківник</label>
+            </div>
+<div class="section-three__wrap">
+            <div class="form-field3">
+            <label for="biopsy-date">2.2 Дата забору біопсії</label>
+            <input type="date" name="biopsy_date" id="biopsy_date" placeholder="" />
+            </div>
+
+            <div class="form-field4">
+            <label for="biopsy-time">2.3 Час забору біопсії</label>
+            <input type="time" name="biopsy_time" id="biopsy_time" placeholder="" />
+            </div>
+
+            <div class="form-field5">
+            <label for="biopsy-lengh">2.4 Довжина отриманої біопсії (у мм)</label>
+            <input type="text" name="biopsy_length" id="biopsy_length" placeholder="" />
+            </div>
+        </div>       
+    </section>
+    <section>
+        <h2 class="sub-heading">3 Інформація по раковому захворюванню
+            <br>
+            TNM - класифікація</h2>
+        <div class="form-group" role="group" aria-labelby="t-class__group"></div>
+        <h3 class="group-heading"> 3.1 T</h3>
+        <input type="checkbox" name="t_tnm" value="Tx" id="Tx" />
+        <label for="Tx">Tx</label>
+        
+        <input type="checkbox" name="t_tnm" value="Tis" id="Tis" />
+        <label for="Tis">Tis</label>
+
+        <input type="checkbox" name="t_tnm" value="T1" id="T1" />
+        <label for="T1">T1</label>
+
+        <input type="checkbox" name="t_tnm" value="T2" id="T2" />
+        <label for="T2">T2</label>
+
+        <input type="checkbox" name="t_tnm" value="T3" id="T3" />
+        <label for="T3">T3</label>
+
+        <input type="checkbox" name="t_tnm" value="T4" id="T4" />
+        <label for="T4">T4</label>
+
+        <input type="checkbox" name="t_tnm" value="T4a" id="T4a" />
+        <label for="T4a">T4a</label>
+
+        <input type="checkbox" name="t_tnm" value="T4b" id="T4b" />
+        <label for="T4b">T4b</label>
+        </div>
+
+        <div class="form-group" role="group" aria-labelby="n-class__group">
+
+        <h3 class="group-heading">3.2 N</h3>
+        <input type="checkbox" name="n_tnm" value="Nx" id="Nx" />
+        <label for="Nx">Nx</label>
+        
+        <input type="checkbox" name="n_tnm" value="N0" id="N0" />
+        <label for="N0">N0</label>
+
+        <input type="checkbox" name="n_tnm" value="N1" id="N1" />
+        <label for="N1">N1</label>
+
+        <input type="checkbox" name="n_tnm" value="N1a" id="N1a" />
+        <label for="N1a">N1a</label>
+
+        <input type="checkbox" name="n_tnm" value="N1b" id="N1b" />
+        <label for="N1b">N1b</label>
+
+        <input type="checkbox" name="n_tnm" value="N1c" id="N1c" />
+        <label for="N1c">N1c</label>
+
+        <input type="checkbox" name="n_tnm" value="N2" id="N2" />
+        <label for="N2">N2</label>
+
+        <input type="checkbox" name="n_tnm" value="Nx" id="N2a" />
+        <label for="N2a">Tx</label>
+
+        <input type="checkbox" name="n_tnm" value="Nx" id="N2b" />
+        <label for="N2b">Tx</label>
+        </div>
+
+        <div class="form-group" role="group" aria-labelby="m-class__group">
+        
+            <h3 class="group-heading">3.3 M</h3>
+            <input type="checkbox" name="m_tnm" value="M0" id="M0" />
+            <label for="M0">M0</label>
+        
+            <input type="checkbox" name="m_tnm" value="M1" id="M1" />
+            <label for="M1">M1</label>
+        
+            <input type="checkbox" name="m_tnm" value="M1a" id="M1a" />
+            <label for="M1a">M1a</label>
+        
+            <input type="checkbox" name="m_tnm" value="M1b" id="M1b" />
+            <label for="M1b">M1b</label>
+    
+        </div>
+        
+        <div class="form-field34" role="group" aria-labelby="metastaz-location__group">
+        
+            <h3 class="group-heading">3.4 Локалізація метастазів</h3>
+            <div class="form-field34__wrap">
+            <div class="row">
+
+           <div class="col"> <input type="checkbox" name="metastases_localisation" value="PUL (C34)" id="PUL (C34)" />
+            <label for="PUL (C34)">PUL (C34)</label></div>
+
+            <div class="col"><input type="checkbox" name="metastases_localisation" value="OSS (C40-41)" id="OSS (C40-41)" />
+            <label for="OSS (C40-41)">OSS (C40-41)</label></div>
+
+            <div class="col"><input type="checkbox" name="metastases_localisation" value="HEP (C22)" id="HEP (C22)" />
+            <label for="HEP (C22)">HEP (C22)</label></div>
+
+           <div class="col"> <input type="checkbox" name="metastases_localisation" value="BRA (C71)" id="BRA (C71)" />
+            <label for="BRA (C71)">BRA (C71)</label></div>
+
+            <div class="col"><input type="checkbox" name="metastases_localisation" value="SKI (C44)" id="SKI (C44)" />
+            <label for="SKI (C44)">LYM (C77)</label></div>
+            </div>
+            <div class="row">
+            <div class="col"><input type="checkbox" name="metastases_localisation" value="MAR (C42.1)" id="MAR (C42.1)" />
+            <label for="MAR (C42.1)">MAR (C42.1)</label></div>
+
+            <div class="col"><input type="checkbox" name="metastases_localisation" value="PLE (C38.4)" id="PLE (C38.4)" />
+            <label for="PLE (C38.4)">PLE (C38.4)</label></div>
+
+            <div class="col"><input type="checkbox" name="metastases_localisation" value="PER (C48.1,2)" id="PER (C48.1,2)" />
+            <label for="PER (C48.1,2)">PRE (C48.1,2)</label></div>
+
+            <div class="col"><input type="checkbox" name="metastases_localisation" value="ADR (C74)" id="ADR (C74)" />
+            <label for="ADR (C74)">ADR (C74)</label></div>
+
+            <div class="col"><input type="checkbox" name="metastases_localisation" value="SKI (C44)" id="SKI (C44)" />
+            <label for="SKI (C44)">SKI (C44)</label></div>
+            </div>
+            <div class="row">
+           <div class="col"> <input type="checkbox" name="metastases_localisation" value="OTH" id="OTH" />
+            <label for="OTH">OTH</label> </div>
+            </div> 
+            </div>
+        </div>
+
+            <div class="form-group" role="group" aria-labelby="gist-class__group">
+            
+                <h3 class="group-heading">3.5 Гістологічна класифікація</h3>
+                <input type="checkbox" name="hst_classifiaction" value="GX" id="GX" />
+                <label for="GX">GX</label>
+
+                <input type="checkbox" name="hst_classifiaction" value="G1" id="G1" />
+                <label for="G1">G1</label>
+
+                <input type="checkbox" name="hst_classifiaction" value="G2" id="G2" />
+                <label for="G2">G2</label>
+
+                <input type="checkbox" name="hst_classifiaction" value="G2" id="G2" />
+                <label for="G2">G3</label>
+
+                <input type="checkbox" name="hst_classifiaction" value="G4" id="G4" />
+                <label for="G4">G4</label>
+            </div>
+
+            <div class="form-group36" role="group" aria-labelby="tumor-size__group">
+                <div class="form-field36">
+                    <label for="biggest_tumour_diameter">3.6 Діметр найбільшої пухлини (у мм)</label>
+                    <input type="text" name="biggest_tumour_diameter" id="biggest_tumour_diameter" placeholder="" />
+                </div>
+            <div class="form-field37">
+                    <label for="biopsy_tumour_diameter">3.7 Діметр пухлини з якої проведена біопсія (у мм)</label>
+                    <input type="text" name="biopsy_tumour_diameter" id="biopsy_tumour_diameter" placeholder="" />
+            </div>
+            </div>
+    </section>
+<section>
+    <h2 class="sub-heading">4 Спосіб життя</h2>
+    <div class="form-group" role="group" aria-labelby="environment__group">
+        
+    <h3 class="group-heading">4.1 Вплив небезпечних факторів довкілля</h3>
+    
+    <div class="form-field40">
+    <input type="checkbox" name="hef" value="Absent" id="Absent" />
+    <label for="Absent">Відсутній</label>
+
+    <input type="checkbox" name="hef" value="Asbestos" id="Asbestos" />
+    <label for="Asbestos">Азбест</label>
+
+    <input type="checkbox" name="hef" value="Radiation" id="Radiation" />
+    <label for="Radiation">Радіація</label>
+    </div>
+
+<div class="field4-wrap">
+    <div class="form-field41">
+    <input type="checkbox" name="cancerogens" value="cancerogens" id="cancerogens" />
+    <label for="cancerogens">Канцерогени. </label>
+    </div>
+
+    <div class="form-field42">
+    <label>Речовини:</label>
+    <input type="text" name="cancerogens-items" id="cancerogens-items" placeholder="" />
+    </div>
+
+</div>
+    <div class="form-field43">
+    <label>Інше:</label>
+    <input type="text" name="other_harmful_factors" id="other_harmful_factors" placeholder="" />
+</div>
+
+    </div>
+<div class="form-field44">
+<label>4.2 Тривалість паління (всі роки в суммі)</label>
+<input type="text" name="smoking" id="smoking" placeholder="" />
+</div>
+<div class="form-group" role="group" aria-labelby="alcohol-consumption__group">
+    <h3 class="group-heading">4.3 Чи вживаєте ви алкоголь?</h3>
+    <input type="checkbox" name="alcohol_intake" value="Frequent" id="Frequent" />
+    <label for="Frequent">Часто</label>
+
+    <input type="checkbox" name="alcohol_intake" value="None" id="None" />
+    <label for="None">Ні</label>
+
+    <input type="checkbox" name="alcohol_intake" value="Stopped" id="Stopped" />
+    <label for="Stopped">Кинув</label>
+
+    <input type="checkbox" name="alcohol_intake" value="Infrequently" id="Infrequently" />
+    <label for="Infrequently">Час від часу</label>
+</div>
+
+<div class="form-group44" role="group" aria-labelby="alcohol-consumption2__group">
+    <h3 class="group-heading">4.4 Частота вживання алкоголю</h3>
+    <input type="checkbox" name="alcohol_frequency_intake" value="Daily" id="Daily" />
+    <label for="Daily">Кожен день</label>
+
+    <input type="checkbox" name="alcohol_frequency_intake" value="Weekly" id="Weekly" />
+    <label for="Weekly">1-2 рази на тиждень</label>
+
+    <input type="checkbox" name="alcohol_frequency_intake" value="Monthly" id="Monthly" />
+    <label for="Monthly">1-2 рази в місяць</label>
+
+    <input type="checkbox" name="alcohol_frequency_intake" value="less-than-once-a-month" id="less-than-once-a-month" />
+    <label for="less-than-once-a-month">Рідше ніж раз в місяць</label>
+</div>
+
+<div class="form-group" role="group" aria-labelby="fat-food__group">
+    <div class="form-field45">
+    <h3 class="group-heading">4.5 Чи вживає пацієнт жирну їжу?</h3>
+    <div class="form-field45__wrap">
+        <div class="row45">
+    <div class="column45"><input type="checkbox" name="fatty_foodfatty_food" value="Daily" id="Daily" />
+    <label for="Daily">Так, кожен день</label></div>
+
+    <div class="column45"><input type="checkbox" name="fatty_food" value="Weekly" id="Weekly" />
+    <label for="Weekly">Так, кілька разів на тиждень</label></div>
+        </div>
+    <div class="row45">
+    <div class="column45"><input type="checkbox" name="fatty_food" value="Monthly" id="Monthly" />
+    <label for="Monthly">Так, кілька разів на місяць</label></div>
+
+    <div class="column45"><input type="checkbox" name="fatty_food" value="Never" id="Never" />
+    <label for="Never">Ні, ніколи</label></div>
+    </div>   
+    </div> 
+</div>
+</div>
+
+<div class="form-group" role="group" aria-labelby="activity__group">
+    <h3 class="group-heading">4.6 Оцініть рухливість образу життя пацієнта</h3>
+    <div class="group-field46">
+        <div class="form-field46__wrap">
+    <input type="checkbox" name="exercise" value="Very-sedentary" id="Very-sedentary" />
+    <label for="Very-sedentary">Дуже маролухливий</label>
+        </div>
+
+    <div class="form-field46__wrap">
+    <input type="checkbox" name="exercise" value="Sedentary" id="Sedentary" />
+    <label for="Sedentary">Маролухливий</label>
+    </div>
+
+    <div class="form-field46__wrap">
+    <input type="checkbox" name="exercise" value="Moderately-mobile" id="Moderately-mobile" />
+    <label for="Moderately-mobile">Помірно рухливий</label>
+    </div>
+
+    <div class="form-field46__wrap">
+    <input type="checkbox" name="exercise" value="Mobile" id="Mobile" />
+    <label for="Mobile">Рухливий</label>
+    </div>
+
+    <div class="form-field46__wrap">
+    <input type="checkbox" name="exercise" value="Very-mobile" id="Very-mobile" />
+    <label for="Very-mobile">Дуже рухливий</label>
+    </div>
+    </div>
+</div>
+</section>
+
+<section>
+    <h2 class="sub-heading">5 Гінікологійчний анамнез (тільки для пацієнтів жіночої статі з раком молочної залози)</h2>
+    <div class="form-group" role="group" aria-labelby="activity__group">
+    <h3 class="group-heading">5.1 Репродуктивний період</h3>
+    <input type="checkbox" name="reproductive_age" value="Reproductive" id="Reproductive" />
+    <label for="Reproductive">Репродуктивний вік</label>
+
+    <input type="checkbox" name="reproductive_age" value="Menopause" id="Menopause" />
+    <label for="Menopause">Пре-менопауза</label>
+
+    <input type="checkbox" name="reproductive_age" value="Pre-menopause" id="Pre-menopause" />
+    <label for="Pre-menopause">Пост-менопауза</label>
+
+    <input type="checkbox" name="reproductive_age" value="Post-menopause" id="Post-menopause" />
+    <label for="Post-menopause">Менопауза</label>
+
+    <input type="checkbox" name="reproductive_age" value="Pregnant" id="Pregnant" />
+    <label for="Pregnant">Вагітність</label>
+</div>
+
+<div class="form-group" role="group" aria-labelby="activity__group">
+    <div class="form-field52__wrap">
+    <div class="form-field52">
+    <label>5.2 Кількість вагітностей</label>
+    <input type="number" name="number_pregnancies" id="number_pregnancies" placeholder="" />
+    </div>
+    <div class="form-field53">
+    <label>5.3 Кількість пологів</label>
+    <input type="number" name="number_deliveries" id="number_deliveries" placeholder="" />
+</div>
+</div>
+</div>
+</section>
+
+<section>
+    <h2 class="sub-heading">6 Загальний анамнез</h2>
+    <div class="form-group" role="group" aria-labelby="activity__group">
+        <h3 class="group-heading">6.1 Чи страждає пацієнт від хронічних захворювань,</h3>
+        <input type="checkbox" name="chronic_illneses" value="yes" id="yes" />
+        <label for="yes">Так</label>
+    
+        <input type="checkbox" name="chronic_illneses" value="no" id="no" />
+        <label for="no">Ні</label>
+    </div>
+
+    <div class="form-group" role="group" aria-labelby="activity__group">
+        <div class="form-field62_wrap">
+            <div class="form-field62">
+        <label>6.2 Захворювання</label>
+        <textarea name="comment" id="chronic_illneses_description" placeholder=""></textarea>
+            </div>
+        <div class="form-field63">
+        <label>6.3 Лікування</label>
+        <textarea name="comment" id="chronic_illneses_description" placeholder=""></textarea>
+    </div>
+    </div>
+    </div>
+
+    <div class="form-group" role="group" aria-labelby="activity__group">
+    <h3 class="group-heading">6.4 Чи має паціент в анамнезі</h3>
+    <input type="checkbox" name="known_illnesses" value="Hepatitis-B" id="Hepatitis-B" />
+    <label for="Hepatitis-B">Гепатит B</label>
+    
+    <input type="checkbox" name="known_illnesses" value="Hepatitis-C" id="Hepatitis-C" />
+    <label for="Hepatitis-C">Гепатит C</label>
+    
+    <input type="checkbox" name="known_illnesses" value="HIV-1" id="HIV-1" />
+    <label for="HIV-1">ВПЧ</label>
+    
+    <input type="checkbox" name="known_illnesses" value="HIV-2" id="HIV-2" />
+    <label for="HIV-2">Нічого із переліченого</label>
+    
+    <input type="checkbox" name="known_illnesses" value="HPV" id="HPV" />
+    <label for="HPV">ВІЛ-1</label>
+
+    <input type="checkbox" name="known_illnesses" value="Siphilis" id="Siphilis" />
+    <label for="Siphilis">ВІЛ-2</label>
+
+    <input type="checkbox" name="known_illnesses" value="None" id="None" />
+    <label for="None">Сифіліс</label>
+    </div>
+
+    <div class="form-group" role="group" aria-labelby="activity__group">
+        <div class="form-field66__wrap">
+            <div class="form-field66">
+        <label>6.6 Захворювання</label>
+        <textarea name="comment" id="other_illneses" placeholder=""></textarea>
+            </div>
+            <div class="form-field67">
+        <label>6.7 Лікування</label>
+        <textarea name="comment" id="other_illneses" placeholder=""></textarea>
+    </div>
+    </div>
+    </div>
+
+    <div class="form-group" role="group" aria-labelby="activity__group">
+        <h3 class="group-heading">6.8 Чи приймає пацієнт медичні препарати та/або біологічні добавки у данний час?</h3>
+        <input type="checkbox" name="medications_intake" value="yes" id="yes" />
+        <label for="yes">Так</label>
+    
+        <input type="checkbox" name="medications_intake" value="no" id="no" />
+        <label for="no">Ні</label>
+    </div>
+<div class="form-field69">
+    <label>6.9 Препарати</label>
+    <input type="text" name="medications" id="medications" placeholder="" />
+</div>
+</section>
+
+<section>
+    <h2 class="sub-heading">7 Онкологічний анамнез</h2>
+    <div class="form-group" role="group" aria-labelby="activity__group">
+    <h3 class="group-heading">7.1 Чи були в сімії пацієнта онкологічні захворювання?</h3>
+    <input type="checkbox" name="familial_cancer" value="yes" id="yes" />
+    <label for="yes">Так</label>
+    
+    <input type="checkbox" name="familial_cancer" value="no" id="no" />
+    <label for="no">Ні</label>
+
+    <input type="checkbox" name="familial_cancer" value="unknown" id="unknown" />
+    <label for="unknown">Невідомо</label>
+    </div>
+
+    <div class="form-group" role="group" aria-labelby="activity__group">
+        <div class="form-field72__wrap">
+            <div class="form-field72">
+        <label>7.2 Родич</label>
+        <textarea name="comment" id="familial_cancer_description" placeholder=""></textarea>
+            </div>
+            <div class="form-field73">
+        <label>7.3 Захворювання</label>
+        <textarea name="comment" id="familial_cancer_description" placeholder=""></textarea>
+    </div>
+    </div>
+    </div>
+
+    <div class="form-group" role="group" aria-labelby="activity__group">
+    <h3 class="group-heading">7.4 Чи хворів(-ла) пацієнт(-ка) іншими видами раку?</h3>
+        <input type="checkbox" name="previous_cancer" value="yes" id="yes" />
+        <label for="yes">Так</label>
+    
+        <input type="checkbox" name="previous_cancer" value="no" id="no" />
+        <label for="no">Ні</label>
+    </div>
+
+    <div class="form-group" role="group" aria-labelby="activity__group">
+        <div class="form-field75__wrap">
+        <div class="form-field75">
+        <label>7.5 Рік дігнозу</label>
+        <input type="text" name="familial_cancer_description" id="familial_cancer_description" placeholder="" />
+        </div>
+        <div class="form-field76">
+        <label>7.6 Локалізація</label>
+        <input type="text" name="familial_cancer_description" id="familial_cancer_description" placeholder="" />
+    </div>
+    </div>
+    </div>
+
+
+    <div class="form-group" role="group" aria-labelby="activity__group">
+        <h3 class="group-heading">7.7 Лікування попереднього онкологічного захворювання</h3>
+<div class="form-field77">
+    <div class="form-field77__wrap">
+        <input type="checkbox" name="PREVIOUS_CANCER_TREAMENT_CHOICES" value="Surgery" id="Surgery" />
+        <label for="Surgery">Операція</label>
+    </div>
+<div class="form-field77__wrap">
+<div class="form-field77__wrap1">
+        <input type="checkbox" name="PREVIOUS_CANCER_TREAMENT_CHOICES" value="Hormonal-therapy" id="Hormonal-therapy" />
+        <label for="Hormonal-therapy">Гормональна-терапія.</label>
+</div>
+<div class="form-field77__wrap2">
+        <label>Тип</label>
+        <input type="text" name="hormonal_therapy_type" id="hormonal_therapy_type" placeholder="" />
+</div>
+</div>
+
+<div class="form-field77__wrap">
+<div class="form-field77__wrap1">
+        <input type="checkbox" name="PREVIOUS_CANCER_TREAMENT_CHOICES" value="Chemotherapy" id="Chemotherapy" />
+        <label for="Chemotherapy">Хіміотерапия.</label></div>
+<div class="form-field77__wrap2">
+        <label>Препарати</label>
+        <input type="text" name="chemo_drugs" id="chemo_drugs" placeholder="" />
+</div>
+</div>
+
+<div class="form-field77__wrap">
+<div class="form-field77__wrap1">
+        <input type="checkbox" name="PREVIOUS_CANCER_TREAMENT_CHOICES" value="Radiotherapy" id="Radiotherapy" />
+        <label for="Radiotherapy">Радіотерапія.</label> </div>
+<div class="form-field77__wrap2">
+        <label>Доза</label>
+        <input type="text" name="radiotherapy_dose" id="radiotherapy_dose" placeholder="" />
+</div>
+</div>
+
+<div class="form-field77__wrap">
+<div class="form-field77__wrap1">
+        <input type="checkbox" name="PREVIOUS_CANCER_TREAMENT_CHOICES" value="Immunotherapy" id="Immunotherapy" />
+        <label for="Immunotherapy">Імунотерапія.</label> </div>
+
+<div class="form-field77__wrap2">
+        <label>Тип</label>
+        <input type="text" name="immunotherapy_type" id="immunotherapy_type" placeholder="" />
+</div>
+</div>
+
+</div>
+</div>
+
+    <div class="form-group" role="group" aria-labelby="activity__group">
+        <div class="form-field78">
+            <label for="comment" class="additional_comments">7.8 Додаткові коментарі</label>
+            <textarea name="additional_comments" id="additional_comments" placeholder=""></textarea>
+        </div>
+    </div>
+    <button data-modal-open class="submit__button" type="submit">Відправити</button>
+</form>
+
+</section>
+</main>
+
+<footer class="footer">
+</footer>
+</body>
+</html>

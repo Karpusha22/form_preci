@@ -1,0 +1,44 @@
+.header__menu {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0px;
+  margin-top: 0px;
+}
+
+.nav {
+  list-style: none;
+  display: flex;
+}
+
+.nav__item {
+  display: inline-flex;
+  align-items: center;
+  margin-right: 30px;
+
+  & :first-child {
+    margin-left: 20px;
+  }
+}
+
+.nav__link {
+  color: $font-color;
+  font-weight: 500;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  font-size: 18px;
+  font-family: $secondary-font;
+
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
+  transition: color $transition-duration $transition-fuction;
+
+  &:hover,
+  &:focus,
+  &:active {
+    color: $accent-color;
+    cursor: pointer;
+  }
+}
